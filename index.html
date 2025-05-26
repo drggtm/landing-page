@@ -2,44 +2,472 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Durga Gautam</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-  
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Gautam - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="hero">
-        <nav>
-            <img src="./img/logo1.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact </a></li>
-                <li><a href="#">About Me</a></li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DG</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <a href="#" class="btn">Hire Me</a>
-        </nav>
-        <div class="info">
-            <h1>I am <span>Durga Gautam</span></h1>
-            <h1>I'm a DevOps Intern</h1>
-            <p>Welcome to my officail Portfolio Website Where I put all<br> my work related to my designs and many more.</p>
-            <a href="#" class="btn" id="downloadBtn">Download CV</a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Durga Gautam</span>
+                </h1>
+                <h2 class="hero-subtitle">DevOps Engineer</h2>
+                <p class="hero-description">
+                    Building scalable cloud infrastructure, automating workflows, and optimizing system performance
+                    with expertise in AWS, CI/CD pipelines, and containerization technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:drggtm07@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/drggtm" class="social-link" title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/drggtm" class="social-link" title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <span class="terminal-title">devops@durga:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command" id="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="img-box">
-           
-            <img src="./img/11.png" class="man-img">
-        </div>
-        <div class="social">
-            <a href="https://twitter.com/drggtm01"><i class="fab fa-twitter"></i></a>
-            
-            <a href="https://www.linkedin.com/in/durga-gautam-84534a226"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate DevOps Engineer from Kathmandu, Nepal</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a highly motivated and detail-oriented DevOps Engineer with practical experience in 
+                        building and managing cloud infrastructure, automating workflows, and optimizing system 
+                        performance. My expertise spans across AWS, CI/CD pipelines, and containerization, with 
+                        a strong focus on improving operational efficiency and driving continuous delivery.
+                    </p>
+                    <p>
+                        Currently working as a DevOps Engineer at Searchable Design LLC, I specialize in designing 
+                        scalable AWS environments, implementing monitoring solutions, and streamlining development 
+                        operations to ensure smooth workflows while maintaining high system uptime and security.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <h4>Bachelor's in Computer Engineering</h4>
+                            <p>Purbanchal University</p>
+                            <span class="education-date">Feb 2016 - Dec 2021</span>
+                            <span class="education-gpa">GPA: 3.19/4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in DevOps and Cloud Infrastructure</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="company">Searchable Design LLC / Benekiva, Kathmandu</span>
+                            <span class="duration">Nov 2023 - Present</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed and managed scalable AWS environments using EC2, S3, RDS, IAM, Load Balancer and AWS Inspector</li>
+                            <li>Configured and maintained the ELK stack for log aggregation, created custom Kibana dashboards for real-time metrics</li>
+                            <li>Streamlined project workflows with Jira, enabling seamless issue tracking and sprint management</li>
+                            <li>Implemented security tools such as Vanta for compliance monitoring and Malwarebytes for endpoint protection</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Trainee</h3>
+                            <span class="company">Hazesoft PL, Kathmandu</span>
+                            <span class="duration">June 2023 - Oct 2023</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Automated system configuration and application deployment using Ansible Playbooks</li>
+                            <li>Developed and optimized CI/CD pipelines with GitLab CI for continuous integration and deployment</li>
+                            <li>Implemented robust backup and recovery strategy, ensuring system data integrity and availability</li>
+                            <li>Utilized HashiCorp Vault for managing secrets and secure storage of sensitive credentials</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Intern</h3>
+                            <span class="company">Amnii Technologies, Lalitpur</span>
+                            <span class="duration">Feb 2023 - May 2023</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed and implemented scalable CI/CD pipeline using Jenkins for software release processes</li>
+                            <li>Containerized applications with Docker, reducing deployment times and improving consistency</li>
+                            <li>Optimized Nginx configurations for better performance and reduced latency for high-traffic applications</li>
+                            <li>Managed Linux systems, improving system stability, security, and performance through proactive monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my notable DevOps and automation projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fab fa-ansible"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/drggtm/ansibleplaybooks" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ansible Playbooks</h3>
+                        <p>Automating server configuration and application deployments using Ansible. 
+                           Comprehensive collection of playbooks for infrastructure management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ansible</span>
+                            <span class="tech-tag">YAML</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/drggtm/TaskManager" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager with CI/CD</h3>
+                        <p>A Node.js application with GitHub Actions configured for deployment to Kubernetes. 
+                           Features automated testing, building, and deployment pipeline.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Infrastructure Automation</h3>
+                        <p>Scalable AWS infrastructure setup with automated monitoring, logging, and 
+                           security implementations using various AWS services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">EC2</span>
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">ELK Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS (EC2, S3, RDS, IAM)</span>
+                        <span class="skill-item">ELB</span>
+                        <span class="skill-item">AWS Inspector</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>CI/CD Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Jenkins</span>
+                        <span class="skill-item">GitLab CI</span>
+                        <span class="skill-item">GitHub Actions</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fab fa-docker"></i>
+                        <h3>Containers</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Configuration Management</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Ansible</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Monitoring & Logging</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">ELK Stack</span>
+                        <span class="skill-item">Kibana</span>
+                        <span class="skill-item">Prometheus</span>
+                        <span class="skill-item">Grafana</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Vanta</span>
+                        <span class="skill-item">Malwarebytes</span>
+                        <span class="skill-item">HashiCorp Vault</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Bash</span>
+                        <span class="skill-item">Shell Scripting</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Web Servers & OS</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Nginx</span>
+                        <span class="skill-item">Apache</span>
+                        <span class="skill-item">Linux (Ubuntu, CentOS)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to discuss your next DevOps project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:drggtm07@gmail.com">drggtm07@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+9779860992919">+977-9860992919</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/drggtm" class="social-btn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/drggtm" class="social-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Durga Gautam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
